@@ -14,11 +14,11 @@ export const LoginPage = () => {
 
     navigate(lastPath, {
       replace: true
-    })
+    });
   }
   return (
     <div className="container">
-      <h1>login</h1>
+      <h1>Login</h1>
       <hr />
 
       <button

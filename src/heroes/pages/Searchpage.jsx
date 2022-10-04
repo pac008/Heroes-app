@@ -28,7 +28,7 @@ export const Searchpage = () => {
       <div className="col-5">
         <h4>Searching</h4>
         <hr />
-        <form onSubmit={onSearchSubmit} > 
+        <form aria-label="form" onSubmit={onSearchSubmit} > 
           <input type="text" value={searchText} onChange={onInputChange} placeholder="Search a hero" className="form-control" name="searchText" />
           <button className="btn btn-outline-primary mt-1" >
             Search
@@ -41,7 +41,7 @@ export const Searchpage = () => {
         
         {
           q == '' 
-            ? <div className="alert-primary alert animate__animated animate__fadeIn "> Search Heri</div>
+            ? <div aria-label="search-test" className="alert-primary alert animate__animated animate__fadeIn "> Search Hero</div>
             : heroes.length == 0 && <div className="alert-danger alert animate__animated animate__fadeIn "> Not hero with <b>{q}</b></div>
         }
         
